@@ -1,0 +1,11 @@
+message_text,language,scam_category,true_label
+"SBI ALERT: Your account will be blocked today. Verify your KYC immediately at bit.ly/sbi-verify to avoid suspension.",English,KYC,1
+"नमस्ते, मैं CBI से बोल रहा हूँ। आपके आधार कार्ड का उपयोग मनी लॉन्ड्रिंग में हुआ है। आपके खिलाफ डिजिटल अरेस्ट वारंट जारी हो चुका है। तुरंत इस खाते में ₹50000 ट्रांसफर करें।",Hindi-Devanagari,Digital Arrest,1
+"Bhai tera UPI account block ho jayega kal. Abhi verify kar link pe click kar: bit.ly/upi-verify. Jaldi kar time nahi hai.",Hinglish,UPI Fraud,1
+"Tumcha parcel customs madhe atakla aahe. Rs.1200 customs duty bharla nahi tar parcel destroy hoil. Pay kara: bit.ly/customs-pay",Marathlish,Courier,1
+"प्रिय ग्राहक, आपका बैंक खाता KYC निलंबित कर दिया गया है। इसे अपडेट करने के लिए नीचे दिए गए लिंक पर क्लिक करें: bit.ly/kyc-update",Hindi-Devanagari,KYC,1
+"Congratulations! You have won Rs.25 Lakh in the KBC Lottery Season 12. Claim your prize by paying processing fee Rs.2500. Contact: 98xxxxxx45 or visit bit.ly/kbc-prize",English,Lottery,1
+"Instant loan approved! Aapka Rs.5 lakh personal loan approved ho gaya hai bina kisi document ke. Abhi apply karo: bit.ly/instant-loan. Limited time offer!",Hinglish,Loan,1
+"India Post: Tumcha parcel (No: IND8472XXX) customs duty pending aahe Rs.850. 24 taasaat pay kara otherwise parcel return hoil: bit.ly/indpost-pay",Marathlish,Courier,1
+"Your UPI payment of Rs.850 to BigBasket was successful. Transaction ID: TXN9932847. Balance: Rs.12450. For queries visit sbi.co.in",English,Legitimate,0
+"Aapka OTP hai 482916. Yeh kisi ke saath share mat karna. Valid for 10 minutes. - HDFC Bank",Hinglish,Legitimate,0

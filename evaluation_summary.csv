@@ -1,0 +1,2 @@
+﻿selected_model,decision_threshold,train_size,test_size,tfidf_features,holdout_accuracy,holdout_roc_auc,holdout_pr_auc,true_negatives,false_positives,false_negatives,true_positives
+LinearSVC,0.7,320,80,3000,0.975,0.9931249999999999,0.9929735544979447,38,2,0,40

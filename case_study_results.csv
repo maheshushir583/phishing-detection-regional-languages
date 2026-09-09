@@ -1,0 +1,11 @@
+﻿msg_id,message,language,category,true_label,prediction,confidence,correct,top_features
+1,SBI ALERT: Your account will be blocked today. Verify your KYC immediately at bi…,English,KYC,Phishing,Phishing,99.8%,✅,"link_pres (+0.33), at link_pres (+0.15), kyc (+0.14)"
+2,"नमस्ते, मैं CBI से बोल रहा हूँ। आपके आधार कार्ड का उपयोग मनी लॉन्ड्रिंग में हुआ …",Hindi-Devanagari,Digital Arrest,Phishing,Safe,35.6%,❌,"अर (-0.17), cbi (+0.17), numtoken (+0.06)"
+3,Bhai tera UPI account block ho jayega kal. Abhi verify kar link pe click kar: bi…,Hinglish,UPI Fraud,Phishing,Phishing,99.9%,✅,"link_pres (+0.30), upi (+0.12), click (+0.12)"
+4,Tumcha parcel customs madhe atakla aahe. Rs.1200 customs duty bharla nahi tar pa…,Marathlish,Courier,Phishing,Phishing,100.0%,✅,"link_pres (+0.30), custom (+0.13), pay (+0.12)"
+5,"प्रिय ग्राहक, आपका बैंक खाता KYC निलंबित कर दिया गया है। इसे अपडेट करने के लिए न…",Hindi-Devanagari,KYC,Phishing,Phishing,99.9%,✅,"link_pres (+0.53), कर link_pres (+0.30), kyc (+0.23)"
+6,Congratulations! You have won Rs.25 Lakh in the KBC Lottery Season 12. Claim you…,English,Lottery,Phishing,Phishing,100.0%,✅,"link_pres (+0.29), numtoken xxxxxx (+0.15), xxxxxx (+0.15)"
+7,Instant loan approved! Aapka Rs.5 lakh personal loan approved ho gaya hai bina k…,Hinglish,Loan,Phishing,Phishing,99.8%,✅,"link_pres (+0.25), loan (+0.10), approv (+0.10)"
+8,India Post: Tumcha parcel (No: IND8472XXX) customs duty pending aahe Rs.850. 24 …,Marathlish,Courier,Phishing,Phishing,99.9%,✅,"link_pres (+0.33), pay (+0.13), parcel (+0.10)"
+9,Your UPI payment of Rs.850 to BigBasket was successful. Transaction ID: TXN99328…,English,Legitimate,Safe,Phishing,87.3%,❌,"link_pres (+0.35), rs (+0.17), rs numtoken (+0.17)"
+10,Aapka OTP hai 482916. Yeh kisi ke saath share mat karna. Valid for 10 minutes. -…,Hinglish,Legitimate,Safe,Safe,10.4%,✅,"aapka (+0.11), for (-0.07), otp numtoken (-0.07)"
