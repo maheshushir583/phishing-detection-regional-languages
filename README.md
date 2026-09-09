@@ -1,4 +1,4 @@
-# Linguistic-Aware Phishing Detection for Regional Indian Languages
+# Linguistic-Aware Phishing Detection Based on Indian Regional Languages Using Machine Learning
 
 A lightweight, deployable phishing detection tool for Indian users who communicate in code-switched regional languages (Hinglish, Marathlish, Hindi/Marathi Devanagari).
 

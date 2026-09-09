@@ -1,6 +1,11 @@
-# Linguistic-Aware Phishing Detection for Regional Indian Languages
+# Aavishkar
+**Maharashtra State Inter-University Research Convention**
 
-**Category 5: Engineering & Technology | Level: PG**
+**Category:** 5 (Engineering and Technology) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Level:** PG  
+**Code No.:** ____________
+
+---
+# Linguistic-Aware Phishing Detection Based on Indian Regional Languages Using Machine Learning
 
 ---
 
