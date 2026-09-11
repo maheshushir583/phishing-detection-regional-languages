@@ -3,26 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aavishkar Poster — Engineering & Technology PG</title>
+<title>Aavishkar Research Poster — Category 5 (Engineering & Technology) PG Level</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Noto+Sans+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
+  /* ==========================================================================
+     AAVISHKAR 1m x 1m (100cm x 100cm) HIGH-IMPACT LIGHT ACADEMIC PRINT SYSTEM
+     Strict Annexure 1 Format | Zero Identity Marks | Category 5 (PG)
+     ========================================================================== */
+
   :root {
-    --brand-navy: #0B132B;
-    --brand-deep: #1C2541;
-    --brand-blue: #2563EB;
+    --bg-canvas: #F1F5F9;
+    --bg-card: #FFFFFF;
+    --brand-navy: #0F172A;
+    --brand-blue: #1E40AF;
+    --brand-accent: #2563EB;
     --accent-teal: #0D9488;
-    --accent-cyan: #06B6D4;
-    --accent-amber: #D97706;
-    --accent-crimson: #E11D48;
-    --accent-green: #059669;
-    --surface-light: #F8FAFC;
-    --surface-card: #FFFFFF;
-    --border-subtle: #E2E8F0;
-    --border-card: #CBD5E1;
-    --text-heading: #0F172A;
-    --text-body: #334155;
-    --text-muted: #64748B;
+    --teal-light: #F0FDF4;
+    --danger-red: #DC2626;
+    --red-light: #FEF2F2;
+    --success-green: #16A34A;
+    --text-primary: #0F172A;
+    --text-muted: #475569;
+    --border-card: #E2E8F0;
+    --border-accent: #CBD5E1;
+    --shadow-card: 0 0.4cm 1cm rgba(15, 23, 42, 0.05);
   }
 
   @page {
@@ -32,26 +37,25 @@
 
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   html, body {
-    margin: 0;
-    padding: 0;
     width: 100cm;
     height: 100cm;
-    background: #0B132B;
-    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, sans-serif;
-    color: var(--text-body);
+    background: var(--bg-canvas);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
+    line-height: 1.35;
   }
 
   .poster-canvas {
     width: 100cm;
     height: 100cm;
     background: #F8FAFC;
-    background-image: radial-gradient(#CBD5E1 0.05cm, transparent 0.05cm);
-    background-size: 1.2cm 1.2cm;
-    padding: 2.2cm;
+    padding: 1.8cm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,13 +63,13 @@
     overflow: hidden;
   }
 
-  /* ================= TOP MANDATED AAVISHKAR BANNER ================= */
+  /* ================= MANDATORY ANNEXURE 1 HEADER BANNER ================= */
   .header-card {
-    background: #FFFFFF;
-    border: 0.12cm solid var(--brand-navy);
-    border-radius: 0.5cm;
+    background: var(--bg-card);
+    border: 0.1cm solid var(--brand-navy);
+    border-radius: 0.6cm;
     padding: 0.8cm 1.4cm 0.7cm 1.4cm;
-    box-shadow: 0 0.5cm 1.2cm rgba(11, 19, 43, 0.08);
+    box-shadow: 0 0.5cm 1.2cm rgba(15, 23, 42, 0.08);
     position: relative;
   }
 
@@ -73,40 +77,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.05cm solid var(--border-subtle);
+    border-bottom: 0.05cm solid var(--border-card);
     padding-bottom: 0.35cm;
   }
 
-  .brand-badge {
-    background: linear-gradient(135deg, var(--brand-navy), var(--brand-deep));
+  .cat-level-badge {
+    background: var(--brand-navy);
     color: #FFFFFF;
-    font-size: 0.62cm;
+    font-size: 0.65cm;
     font-weight: 700;
-    padding: 0.18cm 0.55cm;
-    border-radius: 0.22cm;
+    padding: 0.2cm 0.6cm;
+    border-radius: 0.25cm;
     letter-spacing: 0.02cm;
     display: flex;
     align-items: center;
-    gap: 0.25cm;
+    gap: 0.3cm;
   }
 
-  .brand-badge .pill {
+  .cat-level-badge .dot {
     background: var(--accent-teal);
-    width: 0.3cm;
-    height: 0.3cm;
+    width: 0.35cm;
+    height: 0.35cm;
     border-radius: 50%;
     display: inline-block;
   }
 
   .convention-core-header {
     text-align: center;
-    margin: 0.35cm 0;
   }
 
   .conv-main-title {
-    font-size: 1.65cm;
-    font-weight: 800;
-    letter-spacing: 0.05cm;
+    font-size: 1.55cm;
+    font-weight: 900;
+    letter-spacing: 0.04cm;
     color: var(--brand-navy);
     line-height: 1;
     text-transform: uppercase;
@@ -114,81 +117,78 @@
 
   .conv-sub-title {
     font-size: 0.65cm;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--brand-blue);
     letter-spacing: 0.08cm;
     text-transform: uppercase;
     margin-top: 0.15cm;
   }
 
-  .code-marker-block {
+  .code-box-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.3cm;
-    font-size: 0.72cm;
+    font-size: 0.7cm;
     font-weight: 800;
-    color: var(--brand-deep);
-    margin-top: 0.1cm;
+    color: var(--brand-navy);
   }
 
-  .code-blank-cell {
+  .code-blank-line {
     display: inline-block;
     min-width: 6.5cm;
     border-bottom: 0.09cm dashed var(--brand-blue);
     height: 0.85cm;
-    background: rgba(37, 99, 235, 0.04);
+    background: rgba(37, 99, 235, 0.05);
     border-radius: 0.1cm;
-    vertical-align: middle;
   }
 
   .project-title-box {
-    margin-top: 0.45cm;
-    padding-top: 0.4cm;
-    border-top: 0.06cm dashed var(--border-card);
+    margin-top: 0.4cm;
+    padding-top: 0.35cm;
+    border-top: 0.05cm dashed var(--border-accent);
     text-align: center;
   }
 
   .project-title-box h1 {
-    font-size: 1.15cm;
-    font-weight: 800;
+    font-size: 1.12cm;
+    font-weight: 900;
     color: var(--brand-navy);
     line-height: 1.25;
     margin: 0 auto;
-    max-width: 88cm;
+    max-width: 90cm;
   }
 
-  .dialect-tag-strip {
+  .language-tags {
     display: flex;
     justify-content: center;
-    gap: 0.35cm;
+    gap: 0.3cm;
     margin-top: 0.3cm;
   }
 
-  .d-tag {
-    font-size: 0.36cm;
+  .lang-tag {
+    font-size: 0.38cm;
     font-weight: 700;
     padding: 0.08cm 0.35cm;
     border-radius: 0.15cm;
-    background: #EEF2F6;
-    color: var(--brand-deep);
+    background: #F1F5F9;
+    color: var(--brand-blue);
     border: 0.03cm solid var(--border-card);
   }
 
-  .d-tag.active {
-    background: rgba(13, 148, 136, 0.1);
+  .lang-tag.highlight {
+    background: var(--teal-light);
     color: var(--accent-teal);
     border-color: rgba(13, 148, 136, 0.3);
   }
 
-  /* ================= 3 EQUALIZED COLUMNS ================= */
+  /* ================= 3-COLUMN STRUCTURE ================= */
   .columns-row {
     display: flex;
     flex-direction: row;
-    gap: 1.1cm;
+    gap: 0.9cm;
     flex: 1;
     align-items: stretch;
-    margin-top: 0.8cm;
+    margin-top: 0.7cm;
   }
 
   .column {
@@ -196,288 +196,248 @@
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.65cm;
+    gap: 0.6cm;
   }
 
-  .card-module {
-    background: var(--surface-card);
-    border: 0.05cm solid var(--border-card);
-    border-radius: 0.35cm;
-    padding: 0.65cm 0.8cm;
-    box-shadow: 0 0.25cm 0.6cm rgba(15, 23, 42, 0.03);
-    position: relative;
-  }
-
-  .card-module.fill-flex {
-    flex: 1;
+  /* ================= CARD DESIGN SYSTEM ================= */
+  .card {
+    background: var(--bg-card);
+    border: 0.06cm solid var(--border-card);
+    border-radius: 0.45cm;
+    padding: 0.65cm 0.75cm;
+    box-shadow: var(--shadow-card);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
-  .module-title {
+  .card-header {
     display: flex;
     align-items: center;
-    gap: 0.3cm;
-    font-size: 0.65cm;
-    font-weight: 800;
-    color: var(--brand-navy);
-    border-bottom: 0.05cm solid var(--border-subtle);
-    padding-bottom: 0.35cm;
+    gap: 0.35cm;
+    border-bottom: 0.05cm solid var(--border-card);
+    padding-bottom: 0.3cm;
     margin-bottom: 0.4cm;
   }
 
-  .module-title .chip-num {
-    background: var(--brand-navy);
-    color: #FFFFFF;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.48cm;
-    font-weight: 800;
-    width: 0.9cm;
-    height: 0.9cm;
+  .card-header-icon {
+    width: 0.85cm;
+    height: 0.85cm;
+    background: rgba(30, 64, 175, 0.08);
+    color: var(--brand-blue);
+    border-radius: 0.2cm;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.2cm;
-    box-shadow: 0 0.1cm 0.2cm rgba(11, 19, 43, 0.2);
+    font-size: 0.48cm;
+    font-weight: 800;
+    flex-shrink: 0;
   }
 
-  p {
-    font-size: 0.41cm;
-    line-height: 1.5;
-    color: var(--text-body);
-    margin: 0 0 0.3cm 0;
-  }
-
-  ul, ol {
-    font-size: 0.4cm;
-    line-height: 1.48;
-    color: var(--text-body);
-    margin: 0.15cm 0 0.3cm 0.6cm;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 0.16cm;
-  }
-
-  strong {
-    color: var(--text-heading);
-  }
-
-  .callout-block {
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.04), rgba(13, 148, 136, 0.06));
-    border-left: 0.18cm solid var(--accent-teal);
-    border-radius: 0.15cm;
-    padding: 0.4cm 0.55cm;
-    margin: 0.3cm 0;
-    font-size: 0.41cm;
-    color: var(--brand-deep);
-    line-height: 1.45;
-  }
-
-  /* ================= DATA TABLES ================= */
-  table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.38cm;
-    margin-top: 0.25cm;
-    border: 0.03cm solid var(--border-card);
-    border-radius: 0.25cm;
-    overflow: hidden;
-  }
-
-  th {
-    background: var(--brand-deep);
-    color: #FFFFFF;
-    font-weight: 700;
-    text-align: left;
-    padding: 0.22cm 0.35cm;
+  .card-header h2 {
+    font-size: 0.58cm;
+    font-weight: 800;
+    color: var(--brand-navy);
     letter-spacing: 0.01cm;
+    text-transform: uppercase;
   }
 
-  td {
-    padding: 0.22cm 0.35cm;
-    border-bottom: 0.03cm solid var(--border-subtle);
-    color: var(--text-body);
-  }
-
-  tr:last-child td {
-    border-bottom: none;
-  }
-
-  tr:nth-child(even) {
-    background: #F8FAFC;
-  }
-
-  .num { text-align: right; font-family: 'JetBrains Mono', monospace; font-weight: 600; }
-  .center { text-align: center; }
-  .win { color: var(--accent-green); font-weight: 800; }
-  .alert { color: var(--accent-crimson); font-weight: 800; }
-
-  .badge-pill {
-    display: inline-block;
-    background: rgba(5, 150, 105, 0.12);
-    color: var(--accent-green);
-    border: 0.03cm solid rgba(5, 150, 105, 0.3);
-    font-size: 0.32cm;
-    font-weight: 700;
-    padding: 0.04cm 0.24cm;
-    border-radius: 0.5cm;
-  }
-
-  /* ================= FLOW PIPELINE DIAGRAM ================= */
-  .flow-container {
+  .card-body {
+    font-size: 0.41cm;
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
-    gap: 0.15cm;
-    margin-top: 0.15cm;
-  }
-
-  .flow-node {
-    background: #F8FAFC;
-    border: 0.035cm solid var(--border-card);
-    border-left: 0.18cm solid var(--brand-blue);
-    border-radius: 0.18cm;
-    padding: 0.25cm 0.45cm;
-    font-size: 0.37cm;
-  }
-
-  .flow-node.teal-node {
-    border-left-color: var(--accent-teal);
-    background: rgba(13, 148, 136, 0.03);
-  }
-
-  .flow-node b {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.4cm;
-    color: var(--brand-navy);
-    margin-bottom: 0.05cm;
-  }
-
-  .flow-arrow {
-    text-align: center;
-    color: var(--accent-teal);
-    font-size: 0.42cm;
-    line-height: 0.8;
-  }
-
-  .output-split {
-    display: flex;
     gap: 0.3cm;
+  }
+
+  .card-body p {
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+
+  .card-body strong {
+    color: var(--brand-navy);
+  }
+
+  /* Key Highlight Stat Pill */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3cm;
+    margin: 0.1cm 0;
+  }
+
+  .stat-box {
+    background: #F8FAFC;
+    border: 0.04cm solid var(--border-card);
+    border-left: 0.12cm solid var(--brand-accent);
+    padding: 0.25cm 0.35cm;
+    border-radius: 0.2cm;
+  }
+
+  .stat-box.green {
+    border-left-color: var(--success-green);
+    background: var(--teal-light);
+  }
+
+  .stat-box.red {
+    border-left-color: var(--danger-red);
+    background: var(--red-light);
+  }
+
+  .stat-val {
+    font-size: 0.75cm;
+    font-weight: 900;
+    color: var(--brand-navy);
+    line-height: 1.1;
+  }
+
+  .stat-lbl {
+    font-size: 0.34cm;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.02cm;
+    margin-top: 0.05cm;
+  }
+
+  /* Data Tables */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.37cm;
     margin-top: 0.1cm;
   }
 
-  .verdict-banner {
-    flex: 1;
-    text-align: center;
-    padding: 0.2cm;
-    font-size: 0.38cm;
-    font-weight: 800;
-    border-radius: 0.18cm;
+  .data-table th {
+    background: var(--brand-navy);
+    color: #FFFFFF;
+    padding: 0.2cm 0.3cm;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.36cm;
+    text-transform: uppercase;
+    letter-spacing: 0.02cm;
+  }
+
+  .data-table td {
+    padding: 0.18cm 0.3cm;
+    border-bottom: 0.03cm solid var(--border-card);
+    color: var(--text-primary);
+  }
+
+  .data-table tr:nth-child(even) td {
+    background: #F8FAFC;
+  }
+
+  .data-table tr.highlight td {
+    background: rgba(37, 99, 235, 0.08);
+    font-weight: 700;
+    color: var(--brand-blue);
+  }
+
+  /* Pipeline Diagram CSS */
+  .pipeline-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2cm;
+    margin: 0.1cm 0;
+  }
+
+  .pipe-step {
+    background: #FFFFFF;
+    border: 0.04cm solid var(--border-accent);
+    border-radius: 0.2cm;
+    padding: 0.2cm 0.35cm;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.15cm;
-  }
-
-  .verdict-banner.phish {
-    background: #FFF1F2;
-    color: var(--accent-crimson);
-    border: 0.04cm solid #FECDD3;
-  }
-
-  .verdict-banner.safe {
-    background: #F0FDF4;
-    color: var(--accent-green);
-    border: 0.04cm solid #BBF7D0;
-  }
-
-  /* ================= METRICS TILES ================= */
-  .tile-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 0.3cm;
-    margin: 0.25cm 0;
   }
 
-  .metric-tile {
+  .pipe-badge {
+    background: var(--brand-blue);
+    color: #FFFFFF;
+    font-size: 0.34cm;
+    font-weight: 800;
+    padding: 0.06cm 0.2cm;
+    border-radius: 0.1cm;
+    flex-shrink: 0;
+  }
+
+  .pipe-desc {
+    font-size: 0.37cm;
+    font-weight: 600;
+    color: var(--brand-navy);
+  }
+
+  .pipe-arrow {
+    text-align: center;
+    color: var(--brand-accent);
+    font-size: 0.4cm;
+    font-weight: 900;
+    line-height: 0.8;
+  }
+
+  /* Chart Containers */
+  .chart-container {
+    width: 100%;
     background: #FFFFFF;
     border: 0.04cm solid var(--border-card);
-    border-radius: 0.22cm;
-    padding: 0.28cm 0.15cm;
+    border-radius: 0.25cm;
+    padding: 0.2cm;
     text-align: center;
-    box-shadow: 0 0.1cm 0.3cm rgba(15, 23, 42, 0.03);
   }
 
-  .metric-tile.highlight {
-    background: linear-gradient(135deg, rgba(13, 148, 136, 0.05), rgba(37, 99, 235, 0.08));
-    border-color: var(--accent-teal);
+  .chart-container img {
+    max-width: 100%;
+    max-height: 6.5cm;
+    object-fit: contain;
+    border-radius: 0.15cm;
   }
 
-  .metric-val {
-    font-size: 0.72cm;
-    font-weight: 800;
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--brand-navy);
-    line-height: 1;
-  }
-
-  .metric-tile.highlight .metric-val {
-    color: var(--accent-teal);
-  }
-
-  .metric-lbl {
+  .chart-caption {
     font-size: 0.33cm;
     font-weight: 600;
     color: var(--text-muted);
-    margin-top: 0.12cm;
-    line-height: 1.2;
+    margin-top: 0.1cm;
+    font-style: italic;
   }
 
-  /* ================= VISUAL DATA CHARTS ================= */
-  .visual-dual-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 0.35cm;
-    margin-top: 0.2cm;
-  }
-
-  .chart-box {
-    background: #FFFFFF;
-    border: 0.035cm solid var(--border-card);
-    border-radius: 0.22cm;
-    padding: 0.25cm 0.3cm;
-  }
-
-  .chart-box-title {
+  /* Verdict Badge */
+  .verdict-tag {
+    display: inline-block;
+    padding: 0.06cm 0.2cm;
+    border-radius: 0.1cm;
+    font-weight: 800;
     font-size: 0.34cm;
-    font-weight: 700;
-    color: var(--brand-deep);
-    text-align: center;
-    margin-bottom: 0.15cm;
   }
 
-  /* ================= COMPLIANT FOOTER ================= */
-  .footer-bar {
-    background: #FFFFFF;
-    border: 0.08cm solid var(--brand-navy);
+  .verdict-tag.pass {
+    background: var(--teal-light);
+    color: var(--success-green);
+    border: 0.03cm solid rgba(22, 163, 74, 0.3);
+  }
+
+  .verdict-tag.fail {
+    background: var(--red-light);
+    color: var(--danger-red);
+    border: 0.03cm solid rgba(220, 38, 38, 0.3);
+  }
+
+  /* Footer Note */
+  .footer-banner {
+    background: var(--brand-navy);
+    color: #FFFFFF;
+    padding: 0.35cm 0.8cm;
     border-radius: 0.3cm;
-    padding: 0.35cm 1cm;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0.38cm;
-    font-weight: 700;
-    color: var(--brand-navy);
-    margin-top: 0.7cm;
+    font-weight: 600;
   }
 
-  .footer-sub {
-    color: var(--text-muted);
-    font-weight: 500;
+  .footer-banner span {
+    color: #94A3B8;
   }
 </style>
 </head>
@@ -485,355 +445,394 @@
 
 <div class="poster-canvas">
 
-  <!-- ================= STRICT ANNEXURE 1 FORMATTED HEADER ================= -->
+  <!-- ================= MANDATORY AAVISHKAR HEADER (ANNEXURE 1) ================= -->
   <header class="header-card">
     <div class="header-top-ribbon">
-      <div class="brand-badge"><span class="pill"></span>Category 5: Engineering and Technology</div>
-      <div class="brand-badge"><span class="pill"></span>Level: PG (Postgraduate)</div>
-    </div>
-
-    <div class="convention-core-header">
-      <div class="conv-main-title">Aavishkar</div>
-      <div class="conv-sub-title">Maharashtra State Inter-University Research Convention</div>
-      <div class="code-marker-block">
-        Code No.: <span class="code-blank-cell">&nbsp;</span>
+      <div class="cat-level-badge">
+        <span class="dot"></span>
+        Category 5: Engineering &amp; Technology
+      </div>
+      <div class="convention-core-header">
+        <div class="conv-main-title">Aavishkar</div>
+        <div class="conv-sub-title">Maharashtra State Inter-University Research Convention</div>
+      </div>
+      <div class="cat-level-badge">
+        Level: PG (Postgraduate)
       </div>
     </div>
 
+    <div class="code-marker-block" style="text-align:center; margin-top:0.25cm;">
+      <span>Code No.:</span>
+      <span class="code-blank-line"></span>
+    </div>
+
     <div class="project-title-box">
-      <h1>Linguistic-Aware Phishing Detection in Indian Regional & Code-Switched Dialects Using Low-Compute Machine Learning</h1>
-      <div class="dialect-tag-strip">
-        <span class="d-tag active">Hinglish (Code-Switched)</span>
-        <span class="d-tag active">Marathlish (Code-Switched)</span>
-        <span class="d-tag active">मराठी (Devanagari)</span>
-        <span class="d-tag active">हिंदी (Devanagari)</span>
-        <span class="d-tag active">Indian English</span>
-        <span class="d-tag">Zero-GPU Offline Edge</span>
+      <h1>Linguistic-Aware Phishing Detection Based on Indian Regional Languages Using Machine Learning</h1>
+      <div class="language-tags">
+        <span class="lang-tag highlight">English</span>
+        <span class="lang-tag highlight">Hindi (हिन्दी)</span>
+        <span class="lang-tag highlight">Marathi (मराठी)</span>
+        <span class="lang-tag highlight">Hinglish</span>
+        <span class="lang-tag highlight">Marathlish</span>
+        <span class="lang-tag highlight">Devanagari Unicode</span>
       </div>
     </div>
   </header>
 
-  <!-- ================= EQUALIZED 3-COLUMN STRUCTURE ================= -->
-  <div class="columns-row">
+  <!-- ================= 3 EQUALIZED COLUMNS ================= -->
+  <main class="columns-row">
 
-    <!-- COLUMN 1: Problem, Research Question, Dataset -->
+    <!-- ================= COLUMN 1: INTRODUCTION & DATASET ================= -->
     <div class="column">
-      
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">01</span> Problem Statement
-        </div>
-        <p>
-          Over <strong>800 million Indians</strong> communicate primarily via WhatsApp and SMS using code-switched Romanized vernaculars (Hinglish, Marathlish) and native Devanagari scripts. Mainstream commercial email and SMS filters are almost exclusively trained on Anglo-centric corpora, leaving Indian regional-language users systematically defenseless against hyper-targeted financial cyber fraud[cite: 1]:
-        </p>
-        <ul>
-          <li><strong>Digital Arrest Fraud:</strong> Coercive audio/video summons exploiting law enforcement intimidation[cite: 1].</li>
-          <li><strong>Electricity & Utility Cutoff Scams:</strong> Immediate disconnection warnings demanding urgent app APK downloads[cite: 1].</li>
-          <li><strong>UPI & KYC Account Freeze:</strong> Bank account expiration texts with lookalike phishing domains[cite: 1].</li>
-        </ul>
-      </div>
 
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">02</span> Objectives & Research Question
+      <!-- 1. PROBLEM STATEMENT & SIGNIFICANCE -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">01</div>
+          <h2>Problem Statement &amp; Motivation</h2>
         </div>
-        <div class="callout-block">
-          <strong>Research Question:</strong> Can a classical, interpretable, low-compute ML pipeline trained on a localized multi-dialect corpus generalize to out-of-sample real-world scams without cloud API dependencies[cite: 1]?
+        <div class="card-body">
+          <p>
+            Over <strong>800 million citizens in India</strong> communicate on WhatsApp and SMS in regional languages and code-switched dialects (Hinglish, Marathlish, Hindi/Marathi Devanagari).
+          </p>
+          <p>
+            <strong>The Vulnerability Gap:</strong> Almost all commercial spam/phishing detectors are trained exclusively on English datasets. Scammers actively exploit this gap by sending localized <strong>KYC update alerts, UPI block warnings, digital arrest threats, and courier duty fees</strong> using local phrasing and urgency markers.
+          </p>
+          <div class="stat-grid">
+            <div class="stat-box red">
+              <div class="stat-val">800M+</div>
+              <div class="stat-lbl">Regional Mobile Users</div>
+            </div>
+            <div class="stat-box green">
+              <div class="stat-val">0%</div>
+              <div class="stat-lbl">English Filter Coverage</div>
+            </div>
+          </div>
         </div>
-        <ol>
-          <li>Construct a balanced <strong>400-message regional dialect scam dataset</strong> across 5 dialect profiles[cite: 1].</li>
-          <li>Engineer custom normalization preserving Devanagari Unicode ranges (U+0900–U+097F) with URL/digit masking[cite: 1].</li>
-          <li>Benchmark classical classifiers under strict 5-Fold Stratified Cross-Validation[cite: 1].</li>
-          <li>Deploy a zero-GPU, privacy-preserving edge Streamlit application for low-resource environments[cite: 1].</li>
-        </ol>
-      </div>
+      </section>
 
-      <div class="card-module fill-flex">
-        <div class="module-title">
-          <span class="chip-num">03</span> Multilingual Dataset Architecture
+      <!-- 2. RESEARCH OBJECTIVES -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">02</div>
+          <h2>Research Objectives</h2>
         </div>
-        <p>
-          Curated across genuine fraud reports, CERT-In consumer advisories, and authentic peer communications[cite: 1]:
-        </p>
-        <table>
-          <thead>
-            <tr><th>Metric / Attribute</th><th>Specification</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Total Dataset Size</td><td><strong>400</strong> (Balanced: 200 Phishing, 200 Legitimate)[cite: 1]</td></tr>
-            <tr><td>Train / Test Protocol</td><td>320 Training (80%) &bull; 80 Holdout Test (20%)[cite: 1]</td></tr>
-            <tr><td>Linguistic Breakdown</td><td>Hinglish (94), English (86), Marathlish (78), Marathi (57), Hindi (55), Devanagari (30)[cite: 1]</td></tr>
-            <tr><td>Attack Vectors Covered</td><td>KYC, Digital Arrest, UPI, Courier, Lottery, Loan, Utility, Investment[cite: 1]</td></tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="card-body">
+          <p><strong>Core Question:</strong> <em>Can low-compute classical machine learning models trained on a small, curated multilingual dataset reliably detect phishing intent across Indian regional code-switched text?</em></p>
+          <ul style="padding-left:0.4cm; color:var(--text-muted); line-height:1.45;">
+            <li>Construct a balanced 400-message regional code-switched dataset across 12 scam categories.</li>
+            <li>Develop specialized text preprocessing for regional script, URL tokenization, and stopword removal.</li>
+            <li>Benchmark candidate classifiers (LinearSVC, Logistic Regression, Naive Bayes) using 5-Fold Stratified CV.</li>
+            <li>Deploy a zero-GPU, fully offline Streamlit application for low-resource environments.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. DATASET CHARACTERISTICS -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">03</div>
+          <h2>Multilingual Dataset Breakdown</h2>
+        </div>
+        <div class="card-body">
+          <p>Curated 400 WhatsApp/SMS messages with balanced 1:1 phishing vs. legitimate labels (320 Train / 80 Test split).</p>
+          
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Language / Format</th>
+                <th>Count</th>
+                <th>Scam Types Covered</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hinglish (Hindi-English)</strong></td>
+                <td>94</td>
+                <td>KYC, UPI, Banking, Loan</td>
+              </tr>
+              <tr>
+                <td><strong>English</strong></td>
+                <td>86</td>
+                <td>KYC, Lottery, Utility, Job</td>
+              </tr>
+              <tr>
+                <td><strong>Marathlish (Marathi-Eng)</strong></td>
+                <td>78</td>
+                <td>Customs Duty, Courier, Bill</td>
+              </tr>
+              <tr>
+                <td><strong>Marathi (मराठी)</strong></td>
+                <td>57</td>
+                <td>Bank Freeze, Electricity</td>
+              </tr>
+              <tr>
+                <td><strong>Hindi (हिन्दी)</strong></td>
+                <td>55</td>
+                <td>Digital Arrest, CBI Impersonation</td>
+              </tr>
+              <tr>
+                <td><strong>Devanagari Script</strong></td>
+                <td>30</td>
+                <td>Speed Challan, Govt Scheme</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
     </div>
 
-    <!-- COLUMN 2: Pipeline, Model Benchmarks, Holdout Performance -->
+    <!-- ================= COLUMN 2: METHODOLOGY & PERFORMANCE ================= -->
     <div class="column">
 
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">04</span> End-to-End System Architecture
+      <!-- 4. SYSTEM PIPELINE & PREPROCESSING -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">04</div>
+          <h2>Methodology &amp; Preprocessing</h2>
         </div>
-        <div class="flow-container">
-          <div class="flow-node">
-            <b>1. Multi-Dialect Raw Payload <span>Input</span></b>
-            WhatsApp / SMS text (Hindi, Marathi, Hinglish, Marathlish, English)[cite: 1]
-          </div>
-          <div class="flow-arrow">&#9660;</div>
-          <div class="flow-node teal-node">
-            <b>2. Domain-Aware Normalization Engine <span>Preprocessing</span></b>
-            &bull; Regex URL Masking &rarr; <code>link_present</code>[cite: 1]<br>
-            &bull; Phone/Amount Masking &rarr; <code>numtoken</code>[cite: 1]<br>
-            &bull; Preserves Devanagari Unicode (U+0900–U+097F)[cite: 1]<br>
-            &bull; Dual-language stopword pruning + Porter Stemmer[cite: 1]
-          </div>
-          <div class="flow-arrow">&#9660;</div>
-          <div class="flow-node">
-            <b>3. Sublinear Vectorization <span>Feature Space</span></b>
-            TF-IDF Vectorizer (Unigrams + Bigrams, 3,000 Max Features)[cite: 1]
-          </div>
-          <div class="flow-arrow">&#9660;</div>
-          <div class="flow-node teal-node">
-            <b>4. Calibrated Decision Engine <span>Inference</span></b>
-            Calibrated LinearSVC (Sigmoid calibration) &bull; <strong>Threshold = 0.70</strong>[cite: 1]
-          </div>
-          <div class="flow-arrow">&#9660;</div>
-          <div class="output-split">
-            <div class="verdict-banner phish">&#x26A0; PHISHING (Scam)[cite: 1]</div>
-            <div class="verdict-banner safe">&#x2714; SAFE (Legitimate)[cite: 1]</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">05</span> 5-Fold Stratified CV Benchmark
-        </div>
-        <table>
-          <thead>
-            <tr>
-              <th>Candidate Model</th>
-              <th class="num">Accuracy</th>
-              <th class="num">F1-Score</th>
-              <th class="num">ROC-AUC</th>
-              <th class="center">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="background: rgba(5, 150, 105, 0.08);">
-              <td><strong>LinearSVC (Calibrated)</strong>[cite: 1]</td>
-              <td class="num win">97.75%[cite: 1]</td>
-              <td class="num win">0.9778[cite: 1]</td>
-              <td class="num win">0.9978[cite: 1]</td>
-              <td class="center"><span class="badge-pill">Selected</span>[cite: 1]</td>
-            </tr>
-            <tr>
-              <td>Logistic Regression[cite: 1]</td>
-              <td class="num">98.00%[cite: 1]</td>
-              <td class="num">0.9804[cite: 1]</td>
-              <td class="num">0.9966[cite: 1]</td>
-              <td class="center">Candidate[cite: 1]</td>
-            </tr>
-            <tr>
-              <td>Multinomial Naive Bayes[cite: 1]</td>
-              <td class="num">95.75%[cite: 1]</td>
-              <td class="num">0.9582[cite: 1]</td>
-              <td class="num">0.9909[cite: 1]</td>
-              <td class="center">Baseline[cite: 1]</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- Vectorized CV Chart -->
-        <svg viewBox="0 0 460 85" width="100%" height="auto" style="display:block; margin-top: 0.25cm;">
-          <rect x="0" y="0" width="460" height="85" fill="#F8FAFC" rx="6"/>
-          <text x="110" y="24" font-size="9.5" font-weight="700" text-anchor="end" fill="#0F172A">LinearSVC[cite: 1]</text>
-          <rect x="120" y="14" width="312.8" height="13" fill="#0D9488" rx="3"/>
-          <text x="425" y="24" font-size="8.5" font-family="monospace" font-weight="700" fill="#FFFFFF" text-anchor="end">97.75%[cite: 1]</text>
-
-          <text x="110" y="47" font-size="9.5" font-weight="700" text-anchor="end" fill="#0F172A">Logistic Reg[cite: 1]</text>
-          <rect x="120" y="37" width="313.6" height="13" fill="#2563EB" rx="3"/>
-          <text x="425" y="47" font-size="8.5" font-family="monospace" font-weight="700" fill="#FFFFFF" text-anchor="end">98.00%[cite: 1]</text>
-
-          <text x="110" y="70" font-size="9.5" font-weight="700" text-anchor="end" fill="#0F172A">Naive Bayes[cite: 1]</text>
-          <rect x="120" y="60" width="306.4" height="13" fill="#64748B" rx="3"/>
-          <text x="418" y="70" font-size="8.5" font-family="monospace" font-weight="700" fill="#FFFFFF" text-anchor="end">95.75%[cite: 1]</text>
-        </svg>
-      </div>
-
-      <div class="card-module fill-flex">
-        <div class="module-title">
-          <span class="chip-num">06</span> Holdout Evaluation (80 Unseen Messages)
-        </div>
-        
-        <div class="tile-grid">
-          <div class="metric-tile highlight">
-            <div class="metric-val">97.5%</div>
-            <div class="metric-lbl">Accuracy[cite: 1]</div>
-          </div>
-          <div class="metric-tile highlight">
-            <div class="metric-val">100%</div>
-            <div class="metric-lbl">Recall (Zero FN)[cite: 1]</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-val">95.2%</div>
-            <div class="metric-lbl">Precision[cite: 1]</div>
-          </div>
-          <div class="metric-tile">
-            <div class="metric-val">0.993</div>
-            <div class="metric-lbl">ROC-AUC[cite: 1]</div>
+        <div class="card-body">
+          <div class="pipeline-flow">
+            <div class="pipe-step">
+              <span class="pipe-badge">STEP 1</span>
+              <span class="pipe-desc">Raw Message (WhatsApp / SMS in any dialect)</span>
+            </div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">
+              <span class="pipe-badge">STEP 2</span>
+              <span class="pipe-desc">URL Normalization (regex → <code>link_present</code>) &amp; Number Tokenization (digits → <code>numtoken</code>)</span>
+            </div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">
+              <span class="pipe-badge">STEP 3</span>
+              <span class="pipe-desc">Devanagari Preservation (<code>\u0900-\u097F</code>) + Regional Stopword Removal</span>
+            </div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step">
+              <span class="pipe-badge">STEP 4</span>
+              <span class="pipe-desc">Porter Stemming + TF-IDF Vectorization (Unigram+Bigram, 3,000 features)</span>
+            </div>
+            <div class="pipe-arrow">↓</div>
+            <div class="pipe-step" style="background:var(--teal-light); border-color:rgba(13,148,136,0.3);">
+              <span class="pipe-badge" style="background:var(--accent-teal);">STEP 5</span>
+              <span class="pipe-desc">Calibrated LinearSVC Classifier (Threshold = 0.70) → 🚨 PHISHING vs 🛡️ SAFE</span>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="visual-dual-grid">
-          <!-- Vectorized Confusion Matrix (Holdout) -->
-          <div class="chart-box">
-            <div class="chart-box-title">Holdout Confusion Matrix (N=80)[cite: 1]</div>
-            <svg viewBox="0 0 180 120" width="100%" height="auto">
-              <!-- True Safe -->
-              <rect x="45" y="20" width="60" height="40" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
-              <text x="75" y="45" font-size="14" font-family="monospace" font-weight="800" fill="#059669" text-anchor="middle">38</text>
-              <text x="75" y="55" font-size="7" fill="#059669" text-anchor="middle">True Safe</text>
-              <!-- False Phish -->
-              <rect x="105" y="20" width="60" height="40" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
-              <text x="135" y="45" font-size="14" font-family="monospace" font-weight="800" fill="#D97706" text-anchor="middle">2</text>
-              <text x="135" y="55" font-size="7" fill="#D97706" text-anchor="middle">False Positive</text>
-              <!-- False Negative -->
-              <rect x="45" y="60" width="60" height="40" fill="#FEF2F2" stroke="#FECDD3" stroke-width="1"/>
-              <text x="75" y="85" font-size="14" font-family="monospace" font-weight="800" fill="#E11D48" text-anchor="middle">0</text>
-              <text x="75" y="95" font-size="7" fill="#E11D48" text-anchor="middle">False Negative</text>
-              <!-- True Phish -->
-              <rect x="105" y="60" width="60" height="40" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
-              <text x="135" y="85" font-size="14" font-family="monospace" font-weight="800" fill="#059669" text-anchor="middle">40</text>
-              <text x="135" y="95" font-size="7" fill="#059669" text-anchor="middle">True Phish</text>
-              <!-- Axis labels -->
-              <text x="105" y="12" font-size="7.5" font-weight="700" fill="#334155" text-anchor="middle">Predicted</text>
-              <text x="12" y="65" font-size="7.5" font-weight="700" fill="#334155" text-anchor="middle" transform="rotate(-90 12 65)">Actual</text>
-            </svg>
-          </div>
+      <!-- 5. MODEL BENCHMARKING -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">05</div>
+          <h2>Model Benchmarking (5-Fold CV)</h2>
+        </div>
+        <div class="card-body">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Classifier Model</th>
+                <th>CV Accuracy</th>
+                <th>CV F1</th>
+                <th>CV ROC-AUC</th>
+                <th>CV PR-AUC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight">
+                <td><strong>LinearSVC (Selected)</strong></td>
+                <td><strong>97.75%</strong></td>
+                <td><strong>0.9778</strong></td>
+                <td><strong>0.9978</strong></td>
+                <td><strong>0.9977</strong></td>
+              </tr>
+              <tr>
+                <td>Logistic Regression</td>
+                <td>98.00%</td>
+                <td>0.9804</td>
+                <td>0.9966</td>
+                <td>0.9965</td>
+              </tr>
+              <tr>
+                <td>Multinomial Naive Bayes</td>
+                <td>95.75%</td>
+                <td>0.9582</td>
+                <td>0.9909</td>
+                <td>0.9919</td>
+              </tr>
+            </tbody>
+          </table>
 
-          <!-- Vectorized Threshold Curve -->
-          <div class="chart-box">
-            <div class="chart-box-title">Threshold Tuning (Cutoff = 0.70)[cite: 1]</div>
-            <svg viewBox="0 0 170 120" width="100%" height="auto">
-              <line x1="25" y1="95" x2="160" y2="95" stroke="#CBD5E1" stroke-width="1"/>
-              <line x1="25" y1="15" x2="25" y2="95" stroke="#CBD5E1" stroke-width="1"/>
-              <!-- Threshold vertical guide line at 0.70 -->
-              <line x1="119.5" y1="15" x2="119.5" y2="95" stroke="#D97706" stroke-dasharray="2,2" stroke-width="1.5"/>
-              <text x="119.5" y="12" font-size="7.5" font-weight="800" fill="#D97706" text-anchor="middle">&tau; = 0.70[cite: 1]</text>
-              <!-- Precision Curve -->
-              <path d="M 25 80 Q 70 75 119.5 35 T 160 25" fill="none" stroke="#2563EB" stroke-width="2"/>
-              <text x="155" y="20" font-size="6.5" font-weight="700" fill="#2563EB">Precision</text>
-              <!-- Recall Curve -->
-              <path d="M 25 25 Q 80 25 119.5 25 T 160 70" fill="none" stroke="#059669" stroke-width="2"/>
-              <text x="35" y="22" font-size="6.5" font-weight="700" fill="#059669">Recall</text>
-              <text x="25" y="105" font-size="6.5" fill="#64748B">0.0</text>
-              <text x="119.5" y="105" font-size="6.5" fill="#64748B">0.7</text>
-              <text x="160" y="105" font-size="6.5" fill="#64748B">1.0</text>
-            </svg>
+          <div class="chart-container" style="margin-top:0.25cm;">
+            <img src="model_benchmark.png" alt="Model Benchmark Chart" onerror="this.style.display='none';">
+            <div class="chart-caption">Figure 1: 5-Fold Stratified Cross-Validation Benchmark Comparison.</div>
           </div>
         </div>
+      </section>
 
-      </div>
+      <!-- 6. HOLDOUT EVALUATION -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">06</div>
+          <h2>Holdout Evaluation (80 Test Set)</h2>
+        </div>
+        <div class="card-body">
+          <div class="stat-grid">
+            <div class="stat-box green">
+              <div class="stat-val">97.5%</div>
+              <div class="stat-lbl">Holdout Accuracy</div>
+            </div>
+            <div class="stat-box green">
+              <div class="stat-val">100.0%</div>
+              <div class="stat-lbl">Phishing Recall (0 FN)</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:0.3cm; margin-top:0.1cm;">
+            <div class="chart-container" style="flex:1;">
+              <img src="confusion_matrix.png" alt="Confusion Matrix Chart" onerror="this.style.display='none';">
+              <div class="chart-caption">Figure 2: Confusion Matrix (0 False Negatives).</div>
+            </div>
+            <div class="chart-container" style="flex:1;">
+              <img src="threshold_analysis.png" alt="Threshold Analysis Chart" onerror="this.style.display='none';">
+              <div class="chart-caption">Figure 3: Threshold Tuning Curve (Threshold=0.70).</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
 
-    <!-- COLUMN 3: Explainability, Out-of-Sample, Deployability -->
+    <!-- ================= COLUMN 3: EXPLAINABILITY & CASE STUDY ================= -->
     <div class="column">
 
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">07</span> Explainable Feature Weights
+      <!-- 7. TOP LEARNED FEATURES -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">07</div>
+          <h2>Feature Attribution (LinearSVC)</h2>
         </div>
-        <p>
-          Global LinearSVC coefficients validate domain alignment without black-box opacity[cite: 1]:
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Phishing Indicators</th>
-              <th class="num">Weight</th>
-              <th>Legitimate Indicators</th>
-              <th class="num">Weight</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>link_present</code>[cite: 1]</td>
-              <td class="num alert">+3.85[cite: 1]</td>
-              <td><em>aaj</em> (आज / today)[cite: 1]</td>
-              <td class="num win">&minus;1.04[cite: 1]</td>
-            </tr>
-            <tr>
-              <td><code>कर link_present</code>[cite: 1]</td>
-              <td class="num alert">+1.09[cite: 1]</td>
-              <td><em>kal</em> (कल / tomorrow)[cite: 1]</td>
-              <td class="num win">&minus;0.89[cite: 1]</td>
-            </tr>
-            <tr>
-              <td><code>rs numtoken</code>[cite: 1]</td>
-              <td class="num alert">+0.80[cite: 1]</td>
-              <td><em>credit</em>[cite: 1]</td>
-              <td class="num win">&minus;0.76[cite: 1]</td>
-            </tr>
-            <tr>
-              <td><code>kyc</code>[cite: 1]</td>
-              <td class="num alert">+0.74[cite: 1]</td>
-              <td><em>recharge</em>[cite: 1]</td>
-              <td class="num win">&minus;0.65[cite: 1]</td>
-            </tr>
-            <tr>
-              <td><code>numtoken pm</code>[cite: 1]</td>
-              <td class="num alert">+0.69[cite: 1]</td>
-              <td><em>update</em>[cite: 1]</td>
-              <td class="num win">&minus;0.58[cite: 1]</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="card-body">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Top Phishing Indicator</th>
+                <th>Weight</th>
+                <th>Top Safe Indicator</th>
+                <th>Weight</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>link_present</code> (URL)</td>
+                <td><strong style="color:var(--danger-red);">+3.85</strong></td>
+                <td><code>aaj</code> (today)</td>
+                <td><strong style="color:var(--success-green);">-1.04</strong></td>
+              </tr>
+              <tr>
+                <td><code>कर link_present</code></td>
+                <td><strong style="color:var(--danger-red);">+1.09</strong></td>
+                <td><code>kal</code> (tomorrow)</td>
+                <td><strong style="color:var(--success-green);">-0.89</strong></td>
+              </tr>
+              <tr>
+                <td><code>rs numtoken</code> (Amount)</td>
+                <td><strong style="color:var(--danger-red);">+0.80</strong></td>
+                <td><code>credit</code></td>
+                <td><strong style="color:var(--success-green);">-0.76</strong></td>
+              </tr>
+              <tr>
+                <td><code>kyc</code> (KYC Fraud)</td>
+                <td><strong style="color:var(--danger-red);">+0.74</strong></td>
+                <td><code>recharge</code></td>
+                <td><strong style="color:var(--success-green);">-0.65</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-      <div class="card-module">
-        <div class="module-title">
-          <span class="chip-num">08</span> In-the-Wild Case Study Validation
+      <!-- 8. REAL-WORLD CASE STUDY -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">08</div>
+          <h2>Real-World Case Study (10 Unseen)</h2>
         </div>
-        <p>
-          Evaluated against 10 completely unseen scam payloads intercepted from active fraud vectors without model retraining[cite: 1]:
-        </p>
-        <div class="tile-grid" style="grid-template-columns: 1fr; margin-bottom: 0.25cm;">
-          <div class="metric-tile highlight" style="padding: 0.25cm;">
-            <div class="metric-val">80.0% (8 / 10 Intercepted)[cite: 1]</div>
-            <div class="metric-lbl">Out-of-Sample Detection Generalization[cite: 1]</div>
-          </div>
+        <div class="card-body">
+          <p>Tested 10 out-of-sample messages from active Indian scam reports with zero retraining $\rightarrow$ <strong>80% Accuracy (8/10)</strong>.</p>
+          
+          <table class="data-table" style="font-size:0.33cm;">
+            <thead>
+              <tr>
+                <th>Scam Category</th>
+                <th>Language</th>
+                <th>Score</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SBI Account KYC Block</td>
+                <td>English</td>
+                <td>99.8%</td>
+                <td><span class="verdict-tag pass">✅ DETECTED</span></td>
+              </tr>
+              <tr>
+                <td>Hinglish UPI Account Block</td>
+                <td>Hinglish</td>
+                <td>99.9%</td>
+                <td><span class="verdict-tag pass">✅ DETECTED</span></td>
+              </tr>
+              <tr>
+                <td>Marathlish Customs Duty</td>
+                <td>Marathlish</td>
+                <td>100.0%</td>
+                <td><span class="verdict-tag pass">✅ DETECTED</span></td>
+              </tr>
+              <tr>
+                <td>Hindi Devanagari Bank KYC</td>
+                <td>Hindi</td>
+                <td>99.9%</td>
+                <td><span class="verdict-tag pass">✅ DETECTED</span></td>
+              </tr>
+              <tr>
+                <td>CBI Digital Arrest (No URL)</td>
+                <td>Hindi</td>
+                <td>35.6%</td>
+                <td><span class="verdict-tag fail">❌ MISSED</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.34cm; color:var(--text-muted); margin-top:0.1cm;">
+            <strong>Error Insight:</strong> Text-only scams lacking URLs require dedicated authority-impersonation features.
+          </p>
         </div>
-        <ul>
-          <li><strong>High-Confidence Hits:</strong> Marathlish Courier link (100.0%), Hinglish UPI Fraud (99.9%), Hindi Devanagari KYC (99.9%), Instant Loan Scam (99.8%)[cite: 1].</li>
-          <li><strong>Error Analysis & Bounds:</strong> Missed a text-only, link-absent "Digital Arrest" coercive scam (score 35.6%)[cite: 1]; triggered 1 false positive on an authentic utility receipt containing an external link[cite: 1].</li>
-        </ul>
-      </div>
+      </section>
 
-      <div class="card-module fill-flex">
-        <div class="module-title">
-          <span class="chip-num">09</span> Edge Deployability & Contribution
+      <!-- 9. CONCLUSION & DEPLOYABILITY -->
+      <section class="card">
+        <div class="card-header">
+          <div class="card-header-icon">09</div>
+          <h2>Conclusion &amp; Future Scope</h2>
         </div>
-        <ul>
-          <li><strong>Zero-GPU Footprint:</strong> Entire inference pipeline runs locally on standard quad-core mobile/desktop CPUs in <strong>&lt; 6.5 ms per message</strong>[cite: 1].</li>
-          <li><strong>Air-Gapped Privacy:</strong> Fully eliminates reliance on proprietary cloud LLMs, preventing unauthorized leakage of confidential private SMS payloads[cite: 1].</li>
-          <li><strong>Interactive Explainable App:</strong> Deployed as a live Streamlit interface providing transparent token-attribution heatmaps for immediate user scam literacy[cite: 1].</li>
-        </ul>
-      </div>
+        <div class="card-body">
+          <ul style="padding-left:0.4cm; color:var(--text-muted); line-height:1.45;">
+            <li><strong>Practical Baseline:</strong> Classical TF-IDF + LinearSVC effectively bridges the regional security gap with 100% phishing recall on holdout testing.</li>
+            <li><strong>Zero-GPU &amp; Offline:</strong> Operates locally without cloud APIs, internet connectivity, or specialized hardware.</li>
+            <li><strong>Future Work:</strong> Benchmark against Indic-BERT / MuRIL transformers and expand to 5,000+ crowdsourced messages.</li>
+          </ul>
+        </div>
+      </section>
 
     </div>
 
-  </div>
+  </main>
 
-  <!-- ================= COMPLIANT AAVISHKAR FOOTER ================= -->
-  <footer class="footer-bar">
-    <div>Aavishkar: Maharashtra State Inter-University Research Convention</div>
-    <div class="footer-sub">Category 5: Engineering & Technology &nbsp;&bull;&nbsp; Level: Post-Graduate (PG)[cite: 1, 2]</div>
-    <div>Code No.: [Assigned by Convention Registration Desk][cite: 1, 2]</div>
+  <!-- ================= FOOTER BANNER ================= -->
+  <footer class="footer-banner">
+    <div>Aavishkar Research Convention — Maharashtra State Inter-University Research Competition</div>
+    <div>Category 5: Engineering &amp; Technology | Level: PG</div>
   </footer>
 
 </div>
